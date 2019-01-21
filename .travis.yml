@@ -1,0 +1,19 @@
+language: java
+cache:
+  directories:
+  - "$HOME/.m2"
+before_install:
+- if [ ! -d "$HOME/.m2/repository/org/spigotmc" ]; then  wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+  && java -jar BuildTools.jar --rev 1.13.2 ; else echo "Spigot already installed"
+  ; fi
+install:
+  - mvn clean compile install
+deploy:
+  provider: releases
+  api_key:
+    secure: C9wWMJOdW1TpdduCg87Cy4KtS3TxTT0LQKQg1wCdc+64tazPYzLX/uH06H9nPpc6sQ9D2ZSkBOMWRK3Q0ueUoHtHf4TOIWLsXV6zh4GMkz7XSSfnFwJszWy72HnqHqBh0l6cain+CXCgkF4660Jt2xfeL/W+lkd3o62dU6euWs0FBpR+QZRH6oHgQ31j8M29xqxxl/H3lUME8mZ1m6JBs9Tf30HURJ5uyebACdGy2DUmgCPSkghWs6fsopYlWNqL2VF+G+JeJjGvzKWGo0Ldi17DsaKZzfoR9ADTHjqFsZeijZ4vmmCKw8rSBl5/ART1DO4yCKXPjsaJ6kgZVkYeQunDd8oPyv3jHJbHSVPhnNCTwU6fvy7YZFMitxLeMPDUekIfoMrNPiAx6HtlmF/wIKTYi4qCGGN3kBCkGrV1yLn0w5Ak07NoaU53OXQ/JCuY9gh3ylne/Y2qoyatYAyvouQi8gT11TIQzmHaSGaOMrsljuMVxyEWcdLoLzooM5+kCTOZzyKSLh0K99mAvbYigkqYn27ba1FrVF0/H43DyDy5BjeJVS/BJMu0xSKZsJjxGmMiKiH85jcPsCcZV8i0+UFvgJynnn+CfIrJpF+4CbreXajmnG76Oy13Gr4/aYw4fXLFK8YhHgPRp9BexxNj9piGdtBHdbFoFHRwNa/NpVk=
+  file: target/GMCUpdater.jar
+  skip_cleanup: true
+  draft: true
+  on:
+    tags: true
