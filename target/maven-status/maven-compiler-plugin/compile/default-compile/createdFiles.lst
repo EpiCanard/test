@@ -1,0 +1,11 @@
+fr/epicanard/gmcupdater/exceptions/ConfigException.class
+fr/epicanard/gmcupdater/utils/Reflection/VersionField.class
+fr/epicanard/gmcupdater/commands/CommandHandler.class
+fr/epicanard/gmcupdater/GMCUpdater.class
+fr/epicanard/gmcupdater/configuration/CategoryHandler.class
+fr/epicanard/gmcupdater/utils/ItemStackUtils.class
+fr/epicanard/gmcupdater/exceptions/CantLoadConfigException.class
+fr/epicanard/gmcupdater/utils/Reflection/VersionSupportUtils$Path.class
+fr/epicanard/gmcupdater/configuration/ConfigLoader.class
+fr/epicanard/gmcupdater/utils/Reflection/VersionSupportUtils.class
+fr/epicanard/gmcupdater/utils/LoggerUtils.class

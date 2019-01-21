@@ -1,0 +1,10 @@
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/utils/ItemStackUtils.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/configuration/CategoryHandler.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/utils/Reflection/VersionSupportUtils.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/configuration/ConfigLoader.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/exceptions/CantLoadConfigException.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/utils/Reflection/VersionField.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/exceptions/ConfigException.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/utils/LoggerUtils.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/commands/CommandHandler.java
+/mnt/linux_data/Github/EpiCanard/GMCUpdater/src/main/java/fr/epicanard/gmcupdater/GMCUpdater.java
